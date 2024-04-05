@@ -5,10 +5,10 @@ conventions](https://astro.github.io/microvm.nix/conventions.html) in
 order to run on a microvm.nix host.
 
 ```
-[~/microvm-solo5-spt]$ sudo microvm -c test_net -f git+file://`pwd`
+$ sudo microvm -c test_net -f github:astro/microvm-solo5-spt
 Created MicroVM test_net. Start with: systemctl start microvm@test_net.service
-[~/microvm-solo5-spt]$ sudo systemctl start microvm@test_net.service
-[~/microvm-solo5-spt]$ sudo systemctl status microvm@test_net.service
+$ sudo systemctl start microvm@test_net.service
+$ sudo systemctl status microvm@test_net.service
 ● microvm@test_net.service - MicroVM 'test_net'
      Loaded: loaded (/etc/systemd/system/microvm@.service; static)
      Active: active (running) since Thu 2024-04-04 01:41:20 CEST; 3s ago
